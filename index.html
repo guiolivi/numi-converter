@@ -11,73 +11,80 @@
 </head>
 <body>
 
-  <header class="title">
-    <div>
-      <div>
-        <img src="#" alt="">
-        <span></span>
+  <header class="header">
+    <div class="title-subtitle">
+      <div class="logo-title_wrapper">
+        <img src="#" alt="" class="logo">
+        <span class="title"></span>
       </div>
 
-      <span></span>
+      <span class="subtitle"></span>
     </div>
   </header>
 
-  <main class="content">
-    <div>
-      <section></section>
+  <main class="main">
+    <div class="conversion_box">
+      <section class="converstion_title"></section>
 
-      <section>
-        <div>
-          <span></span>
+      <section class="conversion_options">
+        <div class="currency_wrapper">
+          <span class="currency_detail"></span>
 
-          <div>
-            <div></div>
+          <div class="currency_box">
+            <div class="currency_abbreviation"></div> <!-- use box-shadow on the right and margin to make a vertical line -->
 
-            <div>
-              <span></span>
-              <img src="#" alt="">
-            </div>
+            <button class="currency">
+              <span class="currency_text"></span>
+              <img src="#" alt="" class="currency_image">
+            </button>
           </div>
         </div>
 
-        <button>
-          <img src="#" alt="">
+        <button id="swap">
+          <img src="#" alt="" class="swap_image">
         </button>
 
-        <div>
-          <div>
-            <span></span>
+        <div class="currency-add_wrapper">
+          <div class="currency_wrapper">
+            <span class="currency_detail"></span>
 
-            <div>
-              <div></div>
+            <div class="currency_box">
+              <div class="currency_abbreviation"></div>
 
-              <div>
-                <span></span>
-                <img src="#" alt="">
+              <div class="currency">
+                <span class="currency_text"></span>
+                <img src="#" alt="" class="currency_image">
+              </div>
+            </div>
+
+            <div class="currency_selection">
+              <div class="selection_option">
+                <span class="option_abbreviation"></span>
+                <span class="option_text"></span>
               </div>
             </div>
           </div>
 
-          <button>
-            <img src="#" alt="">
-            <span></span>
+          <button id="add">
+            <img src="#" alt="" class="add_image">
+            <span class="add_text"></span>
           </button>
         </div>
       </section>
 
-      <section>
-        <div>
-          <div></div>
+      <section class="conversion_result">
+        <div class="input_box">
+          <div class="input_money-symbol"></div>
 
-          <label>
-            <input type="text">
+          <label class="input_label">
+            <input type="text" id="input">
           </label>
         </div>
 
-        <div>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="result">
+          <span class="result_description"></span>
+          <span id="result_value"></span>
+          <span class="result_description"></span>
         </div>
       </section>
     </div>
