@@ -1,0 +1,16 @@
+:root {
+    /* Fonts */
+
+    /* Colors */
+    --background-color: #191919;
+
+    --primary-color: #1C1C1C;
+    --secondary-color: #404040;
+    --tertiary-color: #555555;
+    --quaternary-color: #6C6C6C;
+    --quinary-color: #A4A4A4;
+    --senary-color: #B3B3B3;
+
+    --base-color: #FFFFFF;
+    --base-color_alt: #DFDFDF;
+}
