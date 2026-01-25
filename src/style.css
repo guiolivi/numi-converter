@@ -1,5 +1,7 @@
 :root {
     /* Fonts */
+    --primary-font: "Raleway", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
 
     /* Colors */
     --background-color: #191919;
@@ -10,7 +12,18 @@
     --quaternary-color: #6C6C6C;
     --quinary-color: #A4A4A4;
     --senary-color: #B3B3B3;
+    --extra-color-1: #222222;
 
     --base-color: #FFFFFF;
     --base-color_alt: #DFDFDF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
 }
