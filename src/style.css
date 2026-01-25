@@ -18,6 +18,8 @@
     --base-color_alt: #DFDFDF;
 }
 
+/* General */
+
 body {
     display: flex;
     flex-direction: column;
@@ -27,3 +29,20 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+/* Divisions */
+
+.header {
+    flex: 1;
+}
+
+.main {
+    flex: 1;
+}
+
+.credits {
+    flex: 1;
+}
+
+/* Header */
+
