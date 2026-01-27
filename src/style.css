@@ -30,22 +30,98 @@ body {
     height: 100vh;
 }
 
-/* Divisions */
-
-.header {
-    flex: 1;
-}
-
-.main {
-    flex: 1;
-}
-
-.credits {
-    flex: 1;
-}
-
 /* Header */
 
-.title-subtitle {
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 0.85;
+    background-color: #ff6f6f;
+}
 
+.title-subtitle {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 60%;
+    background-color: purple;
+}
+
+.logo-title_wrapper {
+    display: flex;
+    flex: 2;
+    padding: 0.85em 2em;
+    background-color: lightblue;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.4;
+    background-color: yellow;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 2;
+    background-color: darkorange;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.8;
+    background-color: #5e0000;
+}
+
+/* Main */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 2;
+    background-color: #6767ff;
+}
+
+/* Conversion - Box */
+
+.conversion_box {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 90%;
+    background-color: beige;
+}
+
+/* Conversion - Sections */
+
+.converstion_title {
+    flex: 1;
+    background-color: wheat;
+}
+
+.conversion_options {
+    flex: 2;
+    background-color: plum;
+}
+
+.conversion_result {
+    flex: 4;
+    background-color: greenyellow;
+}
+
+/* Credits */
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.25;
+    background-color: #71ff71;
 }
