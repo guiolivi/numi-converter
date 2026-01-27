@@ -102,11 +102,17 @@ body {
 /* Conversion - Sections */
 
 .converstion_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     background-color: wheat;
 }
 
 .conversion_options {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
     flex: 2;
     background-color: plum;
 }
@@ -114,6 +120,38 @@ body {
 .conversion_result {
     flex: 4;
     background-color: greenyellow;
+}
+
+/* Conversion - Options */
+
+.currency_wrapper {
+    flex: 1;
+    background-color: mediumslateblue;
+}
+
+.swap_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency-add_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #cac0ff;
+}
+
+/* Conversion -- Wrapper */
+
+.currency_detail {
+
+}
+
+.currency_box {
+    width: 100%;
+    height: 40%;
+    background-color: #820064;
 }
 
 /* Credits */
