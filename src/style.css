@@ -269,7 +269,8 @@ input[type="text"] {
 }
 
 .add_selection {
-
+    top: 102.5% !important;
+    z-index: 0 !important;
 }
 
 /* Conversion ---- Selection */
