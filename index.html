@@ -40,6 +40,16 @@
               <img src="/arrow.svg" alt="" class="currency_image">
             </button>
           </div>
+
+          <div class="currency_selection">
+            <div class="selection_list">
+              <button class="selection_option">
+                <span class="option_abbreviation">CNY</span>
+                <span class="option_text">Chinese Yuan Renminbi</span>
+              </button>
+            </div>
+          </div>
+
         </div>
 
         <div class="swap_wrapper">
@@ -71,10 +81,21 @@
             </div>
           </div>
 
-          <button id="add">
-            <img src="/add.svg" alt="" class="add_image">
-            <span class="add_text">Add currency</span>
-          </button>
+          <div class="add-selection_wrapper">
+            <button id="add">
+              <img src="/add.svg" alt="" class="add_image">
+              <span class="add_text">Add currency</span>
+            </button>
+
+            <div class="currency_selection add_selection">
+              <div class="selection_list">
+                <button class="selection_option">
+                  <span class="option_abbreviation">CNY</span>
+                  <span class="option_text">Chinese Yuan Renminbi</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -88,9 +109,9 @@
         </div>
 
         <div class="result">
-          <span class="result_description">100 BRL equals to</span>
+          <span id="equals" class="result_description">100 BRL equals to</span>
           <span id="result_value">$0.00</span>
-          <span class="result_description">USD</span>
+          <span id="abbreviation" class="result_description">USD</span>
         </div>
       </section>
     </div>

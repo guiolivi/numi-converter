@@ -51,6 +51,11 @@ input[type="text"] {
     outline: inherit;
 }
 
+.visible {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
 /* Header */
 
 .header {
@@ -263,6 +268,10 @@ input[type="text"] {
     font-weight: 600;
 }
 
+.add_selection {
+
+}
+
 /* Conversion ---- Selection */
 
 .currency_selection {
@@ -277,6 +286,8 @@ input[type="text"] {
     border-radius: 12px;
     z-index: 1;
     overflow-y: scroll;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .selection_list {
