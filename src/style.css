@@ -294,7 +294,7 @@ input[type="text"] {
 .selection_list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 6px;
+    gap: 50px;
     width: 96%;
     height: auto;
     padding: 0.5em 0;
@@ -302,10 +302,12 @@ input[type="text"] {
 
 .selection_option {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 14px;
-    height: 42px;
+    padding: 1.5em 1em;
+    gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
     border-radius: 12px;
     background-color: var(--extra-color-1);
     border: 2px solid var(--secondary-color);

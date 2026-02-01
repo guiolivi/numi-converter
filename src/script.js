@@ -1,12 +1,5 @@
 import axios from 'axios';
 
-const currencyAbbreviation = document.querySelector(".currency_abbreviation");
-const currencyName = document.querySelector(".currency_text");
-const currency = document.querySelector(".currency");
-const currencyWrapper = document.querySelector(".currency_wrapper");
-const addButton = document.querySelector("#add");
-const swapButton = document.querySelector("#swap");
-
 document.addEventListener("click", (e) => {
     const currencyE = e.target.closest(".currency"); if (!currencyE) return;
     const wrapperE = currencyE.closest(".currency_wrapper"); if (!wrapperE) return;
@@ -21,6 +14,8 @@ document.addEventListener("click", (e) => {
     selectionE.classList.toggle("visible");
 })
 
+const currencySelectionBox = document.querySelectorAll(".selection_list");
+
 const currencyInformation = async () => {
     return axios.get(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2026.1.29/v1/currencies.json`)
         .then(cur => {
@@ -31,10 +26,12 @@ const currencyInformation = async () => {
         })
 }
 
-const currencySelectionBox = document.querySelectorAll(".selection_list");
-
 currencyInformation().then(c => {
-    for (const [abbr, name] of Object.entries(c)) {
+    for (let [abbr, name] of Object.entries(c)) {
+        if (name === "") {
+            name = "No available name";
+        }
+
         let template = document.createElement("template");
         template.innerHTML = `
                             <button class="selection_option">
@@ -42,6 +39,10 @@ currencyInformation().then(c => {
                                 <span class="option_text">${name}</span>
                             </button>`;
         let currencyTemplate = template.content.firstElementChild;
+
+        currencySelectionBox.forEach(b => {
+            b.appendChild(currencyTemplate.cloneNode(true))
+        })
     }
 })
 
@@ -49,3 +50,19 @@ const inputBox = document.querySelector("#input");
 const equalsTo = document.querySelector("#equals");
 const valueResult = document.querySelector("#currency");
 const abbreviation = document.querySelector("#abbreviation");
+
+const currencyValue = async (currency) => {
+    return axios.get(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
+        .then(usr => {
+            const data = usr.data;
+            return data;
+        })
+}
+
+function requestCurrencyValue(currency) {
+    currencyValue(currency).then(cur => {
+
+    })
+}
+
+requestCurrencyValue("usd")
