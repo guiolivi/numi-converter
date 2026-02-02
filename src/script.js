@@ -59,10 +59,10 @@ const currencyValue = async (currency) => {
         })
 }
 
-function requestCurrencyValue(currency) {
-    currencyValue(currency).then(cur => {
-
+function requestCurrencyValue(currencyFrom, currencyTo) {
+    currencyValue(currencyFrom).then(cur => {
+        console.log(Object.values(cur)[1][`${currencyTo}`])
     })
 }
 
-requestCurrencyValue("usd")
+requestCurrencyValue("usd", "brl")
